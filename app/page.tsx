@@ -1,8 +1,8 @@
-
+import AudioPlayer from "./components/AudioPlayer";
 export default function Home() {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <section className="w-full h-screen flex-items-center justify-center">
+      <AudioPlayer />
+    </section>
   );
 }
