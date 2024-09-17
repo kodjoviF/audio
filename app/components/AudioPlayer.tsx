@@ -18,7 +18,7 @@ export default function AudioPlayer() {
     const [isPlaying, setIsPlaying] = useState(false);
     const [howl, setHowl] = useState<Howl | null>(null);
 
-    const [volume, audioVolume] = useState(1)
+    const [volume, setVolume] = useState(1)
 
     useEffect(() => {
         const newHowl = new Howl({
@@ -65,7 +65,7 @@ const handleNextTrack = () => {
     setIsPlaying(false);
   };
   const adjustVolume = (delta: number) => {
-    volume((prevVolume: number) => {
+    setVolume((prevVolume: number) => {
       const newVolume = Math.min(Math.max(prevVolume + delta, 0), 1);
       return newVolume;
     });
