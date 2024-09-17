@@ -99,7 +99,7 @@ const handleNextTrack = () => {
         <div className="h-full px-3 py-4 overflow-y-auto bg-blue-500 hover:bg-blue-600">
           <button
             type="button"
-            className="inline-flex items-end p-2 text-sm text-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             onClick={toggleSidebar}
           >
             <span className="sr-only">Close sidebar</span>
